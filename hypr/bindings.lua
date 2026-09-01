@@ -59,6 +59,12 @@ o.bind("SUPER + SHIFT + KP_Up", "move to workspace 8", hl.dsp.window.move({ work
 o.bind("SUPER + SHIFT + KP_Prior", "move to workspace 9", hl.dsp.window.move({ workspace = "9" }))
 o.bind("SUPER + SHIFT + KP_Insert", "move to workspace 10", hl.dsp.window.move({ workspace = "10" }))
 
+-- volume
+
+o.bind("XF86AudioRaiseVolume", "Volume up", "omarchy-audio-output-volume raise", { locked = true, repeating = true })
+o.bind("XF86AudioLowerVolume", "Volume down", "omarchy-audio-output-volume lower", { locked = true, repeating = true })
+
+
 -- full screen on scrolling layout
 
 local active_monitor = hl.get_active_monitor()
