@@ -19,4 +19,4 @@ hl.config({
 o.window(".*", { opacity = "1 1" })
 
 -- animations  
-hl.animation({ leaf = "workspaces", enabled = true, speed = 1.5, bezier = "quick", style = "slide" })
+-- hl.animation({ leaf = "workspaces", enabled = true, speed = 1.5, bezier = "quick", style = "slide" })
