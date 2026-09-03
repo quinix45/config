@@ -71,26 +71,12 @@ local active_monitor = hl.get_active_monitor()
 local width = active_monitor.width
 local height = active_monitor.height
 
-o.bind(
-    "SUPER + ALT + UP",
-    "Maximize window",
-    hl.dsp.window.resize({
-        x = width,
-        y = height,
-        relative = false,
-    })
-)
-o.bind(
-    "SUPER + ALT + DOWN",
-    "Minimize window",
-    hl.dsp.window.resize({
-        x = width / 2.15,
-        y = height,
-        relative = false,
-    })
-)
-
--- o.bind("SUPER + ALT + UP", "Full Screen",  value = "1")
+hl.config({
+    binds = {
+        movefocus_cycles_fullscreen = true,
+    }
+})
+o.bind("SUPER + ALT + UP", "Maximize Window", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 -- Workspaces
 o.bind("SUPER + CTRL + LEFT", "Previous workspace", hl.dsp.focus({ workspace = "e-1" }))
