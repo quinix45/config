@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Personal",
+    "color": "#4285f4",
+    "enabled": true,
+    "url": "https://calendar.google.com/calendar/ical/fabio.setti45%40gmail.com/public/basic.ics"
+  },
+  {
+    "name": "Fordham",
+    "color": "#e01b24",
+    "enabled": true,
+    "url": "https://calendar.google.com/calendar/ical/fsetti%40fordham.edu/private-2ace1a7b16ee0a60945a0afe7df3be77/basic.ics"
+  }
+]
