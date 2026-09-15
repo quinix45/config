@@ -6,7 +6,7 @@
   },
   "bar": {
     "position": "top",
-    "transparent": true,
+    "transparent": false,
     "centerAnchor": "promaa.clock",
     "layout": {
       "left": [
@@ -29,7 +29,9 @@
           "syncIntervalMinutes": 5,
           "notifyMinutesBefore": 5,
           "notifyUpcomingEvents": true,
-          "weekStartDay": "monday"
+          "weekStartDay": "monday",
+          "format": "ddd d MMM HH:mm",
+          "clockHourCycle": 24
         },
         {
           "id": "omarchy.weather"

@@ -26,17 +26,20 @@ require("hypr.autostart")
 require("default.hypr.toggles")
 
 -- Set the size of windows tagged `floating-window`.
-local monitor = hl.get_active_monitor()
+-- Evaluated on monitor.added so dimensions are valid at boot.
+hl.on("monitor.added", function()
+  local monitor = hl.get_active_monitor()
 
-local scale = monitor.scale or 1
+  local scale = monitor.scale or 1
 
-local width = monitor.width / scale
-local height = monitor.height / scale
+  local width = monitor.width / scale
+  local height = monitor.height / scale
 
-o.window(
-    { tag = "floating-window" },
-    { size = { width * 0.75, height * 0.75 } }
-)
+  o.window(
+      { tag = "floating-window" },
+      { size = { width * 0.75, height * 0.75 } }
+  )
+end)
 
 -- default scrolling for special workspaces
 -- Special workspaces use the scrolling layout.

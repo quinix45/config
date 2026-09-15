@@ -67,10 +67,6 @@ o.bind("XF86AudioLowerVolume", "Volume down", "omarchy-audio-output-volume lower
 
 -- full screen on scrolling layout
 
-local active_monitor = hl.get_active_monitor()
-local width = active_monitor.width
-local height = active_monitor.height
-
 hl.config({
     binds = {
         movefocus_cycles_fullscreen = true,
