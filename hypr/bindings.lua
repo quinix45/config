@@ -23,6 +23,7 @@ hl.unbind("SUPER + ALT + G")
 hl.unbind("SUPER + CTRL + LEFT")
 hl.unbind("SUPER + CTRL + RIGHT")
 hl.unbind("SUPER + ALT + UP")
+hl.unbind("SUPER + CTRL + BACKSPACE")
 hl.unbind("XF86AudioRaiseVolume")
 hl.unbind("XF86AudioLowerVolume")
 
