@@ -33,7 +33,7 @@ o.bind("SUPER + SHIFT + F", "File manager", "omarchy-launch-or-focus nautilus")
 o.bind("SUPER + B", "Browser", browser)
 o.bind("SUPER + N", "Editor", "omarchy-launch-editor")
 o.bind("SUPER + T", "Activity", { tui = "btop" })
-o.bind("SUPER + R", "Positron", "positron")
+o.bind("SUPER + R", "Positron", "/usr/share/positron/bin/positron")
 
 -- numpad
 --- change focus
