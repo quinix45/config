@@ -26,20 +26,29 @@ require("hypr.autostart")
 require("default.hypr.toggles")
 
 -- Set the size of windows tagged `floating-window`.
--- Evaluated on monitor.added so dimensions are valid at boot.
-hl.on("monitor.added", function()
-  local monitor = hl.get_active_monitor()
+-- Overrides Omarchy's default { 875, 600 } rule, which is registered earlier and
+-- would otherwise win. Rules are applied in registration order, last match wins.
+-- width/height are physical pixels, so divide by scale to get logical pixels.
+local function size_floating_windows(monitor)
+  if not monitor then
+    return
+  end
 
   local scale = monitor.scale or 1
 
-  local width = monitor.width / scale
-  local height = monitor.height / scale
-
   o.window(
-      { tag = "floating-window" },
-      { size = { width * 0.75, height * 0.75 } }
+    { tag = "floating-window" },
+    { size = { monitor.width / scale * 0.75, monitor.height / scale * 0.75 } }
   )
-end)
+end
+
+-- Monitors are already available while the config loads, so register the rule
+-- immediately. Relying on monitor.added alone left the rule unregistered after
+-- any config reload, silently reverting to the default size.
+size_floating_windows(hl.get_active_monitor())
+
+-- Hotplugged monitors may have a different resolution or scale.
+hl.on("monitor.added", size_floating_windows)
 
 -- default scrolling for special workspaces
 -- Special workspaces use the scrolling layout.
