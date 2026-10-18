@@ -24,9 +24,12 @@ hl.config({
     },
 })
 
--- App-specific touchpad scroll speeds.
+-- App-specific scroll speeds.
 -- o.window("(Alacritty|kitty|foot)", { scroll_touchpad = 1.5 })
 -- o.window("com.mitchellh.ghostty", { scroll_touchpad = 0.2 })
+
+-- PdfCraft scrolls slowly even at its fastest in-app setting.
+o.window("ai.storyteller.pdfcraft", { scroll_touchpad = 3.0, scroll_mouse = 3.0 })
 
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
