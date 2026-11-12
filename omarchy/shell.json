@@ -1,45 +1,66 @@
 {
-  "version": 1,
-  "idle": {
-    "screensaver": 150,
-    "lock": 300
-  },
   "bar": {
-    "position": "top",
-    "transparent": true,
-    "centerAnchor": "promaa.clock",
+    "background": "none",
     "layout": {
-      "left": [
+      "center": [
         {
-          "id": "workspaces"
+          "clockHourCycle": 24,
+          "format": "ddd d MMM HH:mm",
+          "id": "promaa.clock",
+          "notifyMinutesBefore": 5,
+          "notifyUpcomingEvents": true,
+          "syncIntervalMinutes": 5,
+          "weekStartDay": "monday"
         }
       ],
-      "center": [
+      "centerBegin": [
         {
           "id": "omarchy.indicators"
         },
         {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
           "id": "omarchy.system-update"
-        },
-        {
-          "id": "promaa.clock",
-          "syncIntervalMinutes": 5,
-          "notifyMinutesBefore": 5,
-          "notifyUpcomingEvents": true,
-          "weekStartDay": "monday",
-          "format": "ddd d MMM HH:mm",
-          "clockHourCycle": 24
-        },
+        }
+      ],
+      "centerEnd": [
         {
           "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy.elsewhen",
+          "cities": [
+            {
+              "name": "New York",
+              "zone": "America/New_York"
+            },
+            {
+              "name": "Rome",
+              "zone": "Europe/Rome",
+              "lat": 41.89193,
+              "lon": 12.51133,
+              "region": "Lazio, IT"
+            },
+            {
+              "name": "Los Angeles",
+              "zone": "America/Los_Angeles"
+            }
+          ]
+        }
+      ],
+      "left": [
+        {
+          "id": "workspaces"
+        },
+        {
+          "id": "io.github.iammhador.spotify-pulse",
+          "maxWidth": "520"
         }
       ],
       "right": [
         {
           "id": "omarchy.tray"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
         },
         {
           "id": "omarchy.dropbox",
@@ -63,8 +84,15 @@
         {
           "id": "omarchy.power"
         }
-      ]
-    }
+      ],
+      "tray": []
+    },
+    "position": "top"
   },
-  "plugins": []
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [],
+  "version": 1
 }
