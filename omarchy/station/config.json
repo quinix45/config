@@ -1,0 +1,41 @@
+{
+  "version": 11,
+  "lanes": {
+    "HKC OVERSEAS LIMITED 27E1QA 0000000000001": 1
+  },
+  "mode": "extend",
+  "enabled": [
+    "DP-1"
+  ],
+  "singleTarget": "DP-1",
+  "direction": "ltr",
+  "followFocus": true,
+  "graceMs": 0,
+  "keybindings": {},
+  "approvedReplacements": [],
+  "hideNative": true,
+  "hideDisplay": true,
+  "compactMode": "hover",
+  "showOpenApps": true,
+  "panelPosition": "bar-landscape",
+  "bars": {},
+  "wallpaper": {
+    "mode": "same",
+    "followTheme": true
+  },
+  "workspaceMode": "station",
+  "workspaceLayout": {
+    "repetitive": {},
+    "nonrepetitive": {}
+  },
+  "indicatorStyle": "prefixed",
+  "colorMatch": {},
+  "mirrorSource": "",
+  "windows": {
+    "innerGap": 0,
+    "outerGap": 0,
+    "split": 50,
+    "rounding": 0,
+    "speed": 1.06
+  }
+}

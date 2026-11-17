@@ -33,11 +33,16 @@
               "zone": "America/New_York"
             },
             {
-              "name": "Rome",
-              "zone": "Europe/Rome",
-              "lat": 41.89193,
-              "lon": 12.51133,
-              "region": "Lazio, IT"
+              "name": "London",
+              "zone": "Europe/London"
+            },
+            {
+              "name": "Dubai",
+              "zone": "Asia/Dubai"
+            },
+            {
+              "name": "Tokyo",
+              "zone": "Asia/Tokyo"
             },
             {
               "name": "Los Angeles",
@@ -77,9 +82,6 @@
         },
         {
           "id": "omarchy.audio"
-        },
-        {
-          "id": "omarchy.monitor"
         },
         {
           "id": "omarchy.power"
