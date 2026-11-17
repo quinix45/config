@@ -33,20 +33,12 @@
               "zone": "America/New_York"
             },
             {
-              "name": "London",
-              "zone": "Europe/London"
-            },
-            {
-              "name": "Dubai",
-              "zone": "Asia/Dubai"
-            },
-            {
-              "name": "Tokyo",
-              "zone": "Asia/Tokyo"
-            },
-            {
               "name": "Los Angeles",
               "zone": "America/Los_Angeles"
+            },
+            {
+              "name": "Rome",
+              "zone": "Europe/Rome"
             }
           ]
         }
@@ -89,7 +81,8 @@
       ],
       "tray": []
     },
-    "position": "top"
+    "position": "top",
+    "id": "yakumy.station"
   },
   "idle": {
     "lock": 300,
