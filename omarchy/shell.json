@@ -81,8 +81,7 @@
       ],
       "tray": []
     },
-    "position": "top",
-    "id": "yakumy.station"
+    "position": "top"
   },
   "idle": {
     "lock": 300,
